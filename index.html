@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>to do list</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="todo__list">
+			<div class="todo__list-header">
+				<h1>TODO</h1>
+				<div class="add__todo">
+					<div class="todo__input">
+						<input type="text" id="input-task" class="input-task" placeholder="   Добавить задачу . . ." maxlength="180">
+					</div>
+					<div class="todo__button">
+						<button  id="add-btn" class="add">Добавить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<h2>Задачи на день:</h2>
+			<select name="sort" id="sort" class="sort">
+				<option value="all">Все</option>
+				<option value="active">Активные</option>
+				<option value="not-active">Не активные</option>
+			</select>
+		</div>
+		<div class="todo-wrapper" id="todo-wrappers">
+		</div>
+		<div class="footer">
+		<button class="del-btn" id="del-btn">Очистить</button>
+	</div>
+	</div>
+	
+	<script src="js/main.js"></script>
+</body>
+
+</html>

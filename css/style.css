@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px;
+	background: linear-gradient(21deg, #dd03e4, #5611ec);
+}
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h1 {
+	color: aliceblue;
+	margin-top: -10;
+}
+.btn-complete {
+	width: 35px;
+	height: 35px;
+}
+.add {
+	width: 190px;
+	height: 42px;
+	padding: 10px;
+	border: 0px;
+	background-color: #fff;
+	border-left: 2px solid rgb(206, 205, 205);
+}
+.input-task {
+	width: 410px;
+	height: 42px;
+	border: 0px;
+}
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 20px;
+}
+.todo__list {
+	display: block;
+	margin: 0 auto 40px;
+	padding: 30px;
+	border: 2px solid #fff;
+}
+.todo__list-header {
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+}
+.add__todo {
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+}
+.description {
+	padding-top: 10px;
+}
+.todo-item {
+	display: block;
+	margin: 0 auto 15px;
+	padding: 18px;
+	border-bottom: 2px solid #fff;
+}
+.todo-item.checked {
+	color: #22ff05;
+	border-bottom: 2px solid #22ff05;
+}
+.todo-item.checked span {
+	text-decoration: line-through;
+}
+.todo-item.delition {
+	animation: opacity 1s ease-in-out;
+}
+.buttons {
+	display: flex;
+}
+.btn-delete {
+	width: 100px;
+	height: 40px;
+	border: 0px;
+	background: #0391aa;
+	color: #fff;
+	border-radius: 0px;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+.btn-delete:hover {
+	color: rgb(255, 0, 0);
+	cursor: pointer;
+	text-decoration: underline;
+}
+@keyframes opacity {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.description {
+	padding-left: 20px;
+	width: 650px;
+	height: 100%;
+	padding-top: 7px;
+}
+.title {
+	display: flex;
+	justify-content: space-between;
+}
+.sort {
+	margin-top: 18px;
+	height: 45px;
+	width: 230px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 30px;
+	margin-right: 0px;
+}
+
+.del-btn {
+	width: 190px;
+	height: 45px;
+	border: 0;
+}
+.del-btn:hover {
+	background-color: red;
+	color: #fff;
+	transition-duration: 0.8s;
+	cursor: pointer;
+}
+@media only screen and (max-width: 780px) {
+	.add__todo input {
+		width: 350px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.add__todo input {
+		width: 250px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.add__todo input {
+		width: 170px;
+	}
+}
